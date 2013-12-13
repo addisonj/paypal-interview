@@ -1,0 +1,29 @@
+{
+  "name": "paypal-interview",
+  "version": "0.0.0",
+  "description": "An interview app for paypal",
+  "main": "app.js",
+  "scripts": {
+    "test": "mocha test/**/*.js"
+  },
+  "author": "addisonj",
+  "license": "private",
+  "dependencies": {
+    "express": "~3.4.7",
+    "stylus": "~0.41.3",
+    "jade": "~0.35.0",
+    "validation": "0.0.1",
+    "underscore": "~1.5.2",
+    "std-error": "~0.2.2",
+    "node-uuid": "~1.4.1",
+    "validator": "~2.0.0"
+  },
+  "jam": {
+    "packageDir": "public/vendor",
+    "baseUrl": "public",
+    "dependencies": {}
+  },
+  "devDependencies": {
+    "Faker": "~0.5.11"
+  }
+}
