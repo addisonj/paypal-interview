@@ -2007,9 +2007,39 @@ var jam = {
             "main": "backbone.js"
         },
         {
+            "name": "jade",
+            "location": "vendor/jade",
+            "main": "index.js"
+        },
+        {
             "name": "jquery",
             "location": "vendor/jquery",
             "main": "dist/jquery.js"
+        },
+        {
+            "name": "moment",
+            "location": "vendor/moment",
+            "main": "moment.js"
+        },
+        {
+            "name": "require-jade",
+            "location": "vendor/require-jade",
+            "main": "jade.js"
+        },
+        {
+            "name": "rivets",
+            "location": "vendor/rivets",
+            "main": "./dist/rivets.js"
+        },
+        {
+            "name": "spin-js",
+            "location": "vendor/spin-js",
+            "main": "spin.js"
+        },
+        {
+            "name": "text",
+            "location": "vendor/text",
+            "main": "text.js"
         },
         {
             "name": "underscore",
@@ -2041,9 +2071,39 @@ if (typeof require !== "undefined" && require.config) {
             "main": "backbone.js"
         },
         {
+            "name": "jade",
+            "location": "vendor/jade",
+            "main": "index.js"
+        },
+        {
             "name": "jquery",
             "location": "vendor/jquery",
             "main": "dist/jquery.js"
+        },
+        {
+            "name": "moment",
+            "location": "vendor/moment",
+            "main": "moment.js"
+        },
+        {
+            "name": "require-jade",
+            "location": "vendor/require-jade",
+            "main": "jade.js"
+        },
+        {
+            "name": "rivets",
+            "location": "vendor/rivets",
+            "main": "./dist/rivets.js"
+        },
+        {
+            "name": "spin-js",
+            "location": "vendor/spin-js",
+            "main": "spin.js"
+        },
+        {
+            "name": "text",
+            "location": "vendor/text",
+            "main": "text.js"
         },
         {
             "name": "underscore",
@@ -2074,9 +2134,39 @@ else {
             "main": "backbone.js"
         },
         {
+            "name": "jade",
+            "location": "vendor/jade",
+            "main": "index.js"
+        },
+        {
             "name": "jquery",
             "location": "vendor/jquery",
             "main": "dist/jquery.js"
+        },
+        {
+            "name": "moment",
+            "location": "vendor/moment",
+            "main": "moment.js"
+        },
+        {
+            "name": "require-jade",
+            "location": "vendor/require-jade",
+            "main": "jade.js"
+        },
+        {
+            "name": "rivets",
+            "location": "vendor/rivets",
+            "main": "./dist/rivets.js"
+        },
+        {
+            "name": "spin-js",
+            "location": "vendor/spin-js",
+            "main": "spin.js"
+        },
+        {
+            "name": "text",
+            "location": "vendor/text",
+            "main": "text.js"
         },
         {
             "name": "underscore",

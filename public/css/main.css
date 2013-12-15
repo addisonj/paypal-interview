@@ -1,0 +1,36 @@
+body {
+  margin-bottom: 60px;
+  margin-top: 60px;
+}
+.header,
+.footer {
+  background: #4b341a;
+  height: 60px;
+  padding: 10px;
+  position: fixed;
+  width: 100%;
+}
+.header {
+  top: 0;
+}
+.footer {
+  bottom: 0;
+}
+.section-title {
+  color: #fff;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-align: center;
+  width: 100%;
+}
+.loading-modal {
+  background: rgba(51,51,51,0.75);
+  height: 100%;
+  top: 0;
+  width: 100%;
+  position: absolute;
+}
+.loading-spinner {
+  left: 50%;
+  position: relative;
+  top: 50%;
+}

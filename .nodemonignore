@@ -1,0 +1,5 @@
+*.swp
+# we never need to restart for anything in public
+public/*
+.git/*
+node_modules/*

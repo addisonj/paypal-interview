@@ -6,10 +6,10 @@ var Transaction = require("./models/Transaction")
 var count = 1000
 var transactions = []
 
-var millsInMonth = 1000 * 60 * 60 * 24 * 30
+var millsInWeek = 1000 * 60 * 7 * 24 * 7
 
 function getRandDateBefore(date) {
-  var mills = Math.round(Math.random() * millsInMonth)
+  var mills = Math.round(Math.random() * millsInWeek)
   var nd = new Date()
   nd.setTime(date.getTime() - mills)
   return nd

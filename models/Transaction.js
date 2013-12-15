@@ -39,7 +39,8 @@ Transaction.index = function(params, cb) {
     params = {}
   }
 
-  cb(null, transactions)
+  var start = params.page * params.pageSize
+  cb(null, transactions.slice(start, start + params.pageSize))
 }
 
 Transaction.getById = function(id, cb) {
@@ -53,6 +54,7 @@ Transaction.prototype.save = function(cb) {
   }
 
   transactionsById[this.id] = this
+  transactions.unshift(this)
   cb()
 }
 

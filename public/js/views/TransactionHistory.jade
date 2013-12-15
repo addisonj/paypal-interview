@@ -1,0 +1,9 @@
+table.transaction-list
+  tr.transaction(rv-each-transaction="transactions.models")
+    td {transaction:dateAdded | dayFormat}
+    td {transaction.getName < name email }
+    td
+      span {transaction:currency | currencySymbol}
+      span {transaction:amount | currency}
+
+
