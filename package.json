@@ -16,7 +16,8 @@
     "underscore": "~1.5.2",
     "std-error": "~0.2.2",
     "node-uuid": "~1.4.1",
-    "validator": "~2.0.0"
+    "validator": "~2.0.0",
+    "nib": "~1.0.1"
   },
   "jam": {
     "packageDir": "public/vendor",

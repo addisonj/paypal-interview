@@ -1,36 +1,37 @@
-body {
-  margin-bottom: 60px;
-  margin-top: 60px;
-}
-.header,
-.footer {
-  background: #4b341a;
-  height: 60px;
-  padding: 10px;
-  position: fixed;
-  width: 100%;
-}
-.header {
-  top: 0;
-}
-.footer {
-  bottom: 0;
-}
-.section-title {
-  color: #fff;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  text-align: center;
-  width: 100%;
-}
-.loading-modal {
-  background: rgba(51,51,51,0.75);
-  height: 100%;
-  top: 0;
-  width: 100%;
-  position: absolute;
-}
-.loading-spinner {
-  left: 50%;
-  position: relative;
-  top: 50%;
-}
+body{background:#f3eae3;margin-bottom:60px;margin-top:60px}
+.header,.footer{background:#4b341a;height:60px;padding:10px;position:fixed;width:100%}
+.header{top:0}
+.footer{bottom:0}
+.footer-container{width:100%}
+.section-title{color:#fff;font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;text-align:center;width:100%}
+.content-inner{padding-left:0;padding-right:0}
+.generic-btn{background:-webkit-linear-gradient(top, #fffef8 0%, #bcbebd 100%);background:-moz-linear-gradient(top, #fffef8 0%, #bcbebd 100%);background:-o-linear-gradient(top, #fffef8 0%, #bcbebd 100%);background:-ms-linear-gradient(top, #fffef8 0%, #bcbebd 100%);background:linear-gradient(to bottom, #fffef8 0%, #bcbebd 100%);color:#414141;font-size:1em;font-weight:bold;min-width:40%;max-width:50%;padding:.75em 3em}
+.wide-btn{max-width:100%;width:100%}
+.narrow-btn{padding:.75em 1em}
+.right-btn{float:right}
+.landing-page{text-align:center;}
+.landing-page button{background:-webkit-linear-gradient(top, #fffef8 0%, #bcbebd 100%);background:-moz-linear-gradient(top, #fffef8 0%, #bcbebd 100%);background:-o-linear-gradient(top, #fffef8 0%, #bcbebd 100%);background:-ms-linear-gradient(top, #fffef8 0%, #bcbebd 100%);background:linear-gradient(to bottom, #fffef8 0%, #bcbebd 100%);color:#414141;font-size:1em;font-weight:bold;padding:2.5em .5em;width:70%}
+.send-money-btn{margin-left:auto;margin-right:auto;margin-top:20px}
+.trans-history-btn{margin-left:auto;margin-right:auto;margin-top:100px}
+.loading-modal{background:rgba(51,51,51,0.75);height:100%;top:0;width:100%;position:absolute}
+.loading-spinner{left:50%;position:relative;top:50%}
+table.transaction-list{border-collapse:collapse;width:100%;}
+table.transaction-list td{border:none;padding-bottom:8px;padding-top:8px;vertical-align:middle}
+.transaction-date{padding-left:20px}
+.transaction-name{text-align:center}
+.transaction-amount{padding-right:20px;text-align:right}
+tr.transaction:nth-child(odd){background:#e9d9cb}
+tr.transaction:nth-child(even){background:#e4d5c3}
+.transaction-builder{padding:10px}
+.transaction-form fieldset,.transaction-form input,.transaction-form textarea{background:#faf9f5;border:1px solid #000;-webkit-border-radius:10px;border-radius:10px}
+.transaction-form input,.transaction-form textarea{background:#faf9f5;border:none;-webkit-box-shadow:none;box-shadow:none}
+.transaction-form input{text-align:left}
+.transaction-form textarea{width:100%}
+.transaction-form label{margin:4px 0 0 4px}
+.transaction-form input[type=radio]{display:none}
+.transaction-form input[type=radio] + label{display:block;margin:-2px;padding:10px 20px}
+.transaction-form input[type=radio]:checked + label{background:url("/images/checkmark.png") no-repeat 95% 50%;-webkit-background-size:25px 25px;-moz-background-size:25px 25px;background-size:25px 25px;color:#d4ae89}
+.transaction-form .personal-label{border-bottom:1px solid #000}
+.transaction-confirm{text-align:center}
+.confirmation-message{margin-left:auto;margin-right:auto;margin-top:45%}
+.checkmark{width:30px;height:30px}

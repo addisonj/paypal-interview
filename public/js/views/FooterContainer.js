@@ -11,7 +11,6 @@ define(function(require) {
     },
 
     setFooterView: function(view) {
-      console.log("old", this.view, "new", view)
       this.removeView()
       this.view = view
       var self = this

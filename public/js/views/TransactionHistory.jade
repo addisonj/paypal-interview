@@ -1,8 +1,8 @@
 table.transaction-list
   tr.transaction(rv-each-transaction="transactions.models")
-    td {transaction:dateAdded | dayFormat}
-    td {transaction.getName < name email }
-    td
+    td.transaction-date {transaction:dateAdded | dayFormat}
+    td.transaction-name {transaction.getName < name email }
+    td.transaction-amount
       span {transaction:currency | currencySymbol}
       span {transaction:amount | currency}
 

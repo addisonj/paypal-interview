@@ -4,11 +4,22 @@ var http = require('http')
 var path = require('path')
 var se = require("std-error")
 
+var stylus = require("stylus")
+var nib = require("nib")
+
 var app = express()
 
 // pull in routes
 var index = require("./controllers/index")
 var transactions = require("./controllers/transactions")
+
+function compile(str, path) {
+  return stylus(str)
+    .set('filename', path)
+    .set('compress', true)
+    .use(nib());
+}
+
 
 app.set('port', process.env.PORT || 3000)
 app.set('views', path.join(__dirname, 'views'))
@@ -18,7 +29,10 @@ app.use(express.json())
 app.use(express.urlencoded())
 app.use(express.methodOverride())
 app.use(app.router)
-app.use(require('stylus').middleware(path.join(__dirname, 'public')))
+app.use(stylus.middleware({
+  src: path.join(__dirname, 'public'),
+  compile: compile
+}))
 app.use(express.static(path.join(__dirname, 'public')));
 
 // development only

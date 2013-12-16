@@ -19,10 +19,12 @@ var d = new Date()
 for (var i = 0; i < count; i++) {
   var data = {}
   data.email = faker.Internet.email()
-  if (Math.random() > 0.25) {
-    data.name = faker.Company.companyName()
-  } else {
-    data.name = faker.Name.findName()
+  if (Math.random() > .3) {
+    if (Math.random() > 0.25) {
+      data.name = faker.Company.companyName()
+    } else {
+      data.name = faker.Name.findName()
+    }
   }
 
   data.amount = (Math.random() * 1000).toFixed(2)

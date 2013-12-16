@@ -65,7 +65,7 @@ define(function(require) {
     initialize: function() {
       var self = this
       var clearBtn = new GenericButton({}, "Clear", function() { self.clear(); })
-      var nextBtn = this.nextBtn = new GenericButton({}, "Next", function() { self.next(); })
+      var nextBtn = this.nextBtn = new GenericButton({}, "Next", function() { self.next(); }, "right-btn")
       this.btnGroup = new ButtonGroup({}, [clearBtn, nextBtn])
       this.getDependency("header").setHeader("Send Money")
       this.getDependency("footer").setFooterView(this.btnGroup)

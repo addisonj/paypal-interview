@@ -10,8 +10,7 @@
       input(type="text", name="name", placeholder="John Doe", rv-value="transaction:name")
 
     fieldset.row
-      label Amount:
-      span(rv-text="transaction:currency | currencySymbol").currency-symbol
+      label Amount:{transaction:currency | currencySymbol}
       input(type="text", required="required", name="amount", placeholder="1.00", rv-value="transaction:amount | currency", rv-on-input="controller.checkValid").transaction-amount
       select(name="currency", rv-value="transaction:currency")
         option(value="USD", selected=true) USD
@@ -20,13 +19,13 @@
 
     fieldset.row
       label Message (optional):
-      textarea(name="message", rows="4", rv-value="transaction:message")
+      textarea(name="message", rows="2", rv-value="transaction:message")
 
     p What's this payment for?
 
     fieldset.row
-      input(type="radio", name="purpose", value="PERSONAL", rv-checked="transaction:purpose")#purpose.transaction-purpose
-      lavel(for="personal") I'm sending money to family or friends
+      input(type="radio", name="purpose", value="PERSONAL", rv-checked="transaction:purpose")#personal.transaction-purpose
+      label(for="personal").personal-label I'm sending money to family or friends
       input(type="radio", name="purpose", value="PAYMENT", rv-checked="transaction:purpose")#payment.transaction-purpose
-      label(for="payment") I'm paying for goods or services
+      label(for="payment").payment-label I'm paying for goods or services
 

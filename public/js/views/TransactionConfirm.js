@@ -26,8 +26,8 @@ define(function(require) {
         model.fetch()
       }
       var self = this
-      var newBtn = new GenericButton({}, "Send Money", function() { self.sendMoney(); })
-      var historyBtn = this.nextBtn = new GenericButton({}, "Transaction History", function() { self.history(); })
+      var newBtn = new GenericButton({}, "Send Money", function() { self.sendMoney(); }, "narrow-btn")
+      var historyBtn = this.nextBtn = new GenericButton({}, "Transaction History", function() { self.history(); }, "right-btn narrow-btn")
       this.btnGroup = new ButtonGroup({}, [newBtn, historyBtn])
       this.getDependency("footer").setFooterView(this.btnGroup)
       View.prototype.initialize.call(this, {}, model)

@@ -1,0 +1,42 @@
+.transaction-builder {
+  padding: 10px
+}
+
+.transaction-form {
+  fieldset,input,textarea {
+    background: #faf9f5
+    border: 1px solid black
+    border-radius: 10px
+  }
+  input,textarea {
+    background: #faf9f5
+    border: none
+    box-shadow: none
+  }
+  input {
+    text-align: left
+  }
+  textarea {
+    width: 100%
+  }
+  label {
+    margin: 4px 0 0 4px
+  }
+  input[type=radio] {
+    display: none
+  }
+  input[type=radio] + label {
+    display: block
+    margin:-2px;
+    padding: 10px 20px;
+  }
+  input[type=radio]:checked + label {
+    background: url("/images/checkmark.png") no-repeat 95% 50%
+    background-size: 25px 25px
+    color: #d4ae89
+  }
+  .personal-label {
+    border-bottom: 1px solid black
+  }
+
+}

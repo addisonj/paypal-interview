@@ -2,7 +2,7 @@ define(function(require) {
   var moment = require("moment")
   return {
     "dayFormat" : function(v) {
-      return moment(v).format("MM/DD/YYYY")
+      return moment(v).format("M/D/YYYY")
     },
     "currency" : function(v) {
       if (typeof v !== "number") {
